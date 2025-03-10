@@ -1,0 +1,339 @@
+/* home */
+
+.home {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.pic {
+    width: 700px;
+    height: 500px;
+}
+
+.name {
+    color: black;
+    text-decoration: none;
+}
+
+.back {
+    width: 30px;
+
+}
+
+.rigs {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+
+
+}
+
+
+/* Black Thunder Rig */
+
+.b {
+    background-color: #0A192F;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.b-line{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.b-icon{
+    width: 100px;
+    height: 100px;
+
+}
+
+.b-stat {
+    margin: 20px;
+}
+
+.b-info{
+    background-color: #25507D;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.b-charts{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.b-options{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+
+
+}
+
+
+
+.choice:hover{
+    color:grey;
+    cursor:pointer;
+}
+
+.choice.selected {
+    color: grey;
+}
+
+.b-data {
+    color: white;
+}
+
+b-data:visited {
+    color: white !important;
+}
+
+
+
+
+
+
+/* Blackrock-7 Well */
+
+.z {
+    background-color: #4B382A;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.z-line{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.z-icon{
+    width: 100px;
+    height: 100px;
+
+}
+
+.z-stat {
+    margin: 20px;
+}
+
+.z-info{
+    background-color: #6F4E37;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.z-charts{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.z-options{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+
+
+}
+
+
+
+.choice:hover{
+    color:grey;
+    cursor:pointer;
+}
+
+.choice.selected {
+    color: grey;
+}
+
+.z-data {
+    color: white;
+}
+
+z-data:visited {
+    color: white !important;
+}
+
+
+/* Blackrock-7 Well */
+
+.s {
+    background-color: #DC143C;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.s-line{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.s-icon{
+    width: 100px;
+    height: 100px;
+
+}
+
+.s-stat {
+    margin: 20px;
+}
+
+.s-info{
+    background-color: grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.s-charts{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.s-options{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+
+
+}
+
+
+
+.choice:hover{
+    color:grey;
+    cursor:pointer;
+}
+
+.choice.selected {
+    color: grey;
+}
+
+.s-data {
+    color: white;
+}
+
+s-data:visited {
+    color: white !important;
+}
+/* Arctic Drill */
+
+.c {
+    background-color: #A7C7E7;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.c-line{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.c-icon{
+    width: 100px;
+    height: 100px;
+
+}
+
+.c-stat {
+    margin: 20px;
+}
+
+.c-info{
+    background-color: #779FC1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.c-charts{
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px
+}
+
+.c-options{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+
+
+}
+
+
+
+.choice:hover{
+    color:grey;
+    cursor:pointer;
+}
+
+.choice.selected {
+    color: grey;
+}
+
+.c-data {
+    color: white;
+}
+
+c-data:visited {
+    color: white !important;
+}
+
+
+
+
+
+
+

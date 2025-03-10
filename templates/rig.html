@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="{{ tag }}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../static/assets/img/oil.png">
+
+</head>
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+<body>
+    <a href=" {{ url_for('home') }}"><img style="width: 100px;" src="static/assets/img/home.png"></a>
+    <center>
+        <h1 style="font-size:60px; margin-top: -100px;">{{ name }}</h1>
+        <h2 id="clock"></h2>
+
+        <h1 style="margin-bottom: -100px;">LIVE DATA</h1>
+    </center>
+    <div class="{{tag}}-info">
+
+            <div class="{{tag}}-line">
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/depth.png">
+                        <h2>Current Depth</h2>
+                        <P id="depth">{{ depth }} ft</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/rop.png">
+                        <h2>ROP (Rate of Penetration)</h2>
+                        <P id="ROP">{{ ROP }} ft/hr</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/torque.png">
+                        <h2>Torque</h2>
+                        <P id="torque">{{ torque }} ft-lbs</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/rop.png">
+                        <h2>RPM (Revolutions Per Minute)</h2>
+                        <P id="RPM">{{ RPM }} </P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/pressure.png">
+                        <h2>Standpipe Pressure</h2>
+                        <P id="pipe">{{ pipe }} psi</P>
+                    </center>
+                </div>
+            </div>
+
+            <div class="{{tag}}-line">
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/weight.png">
+                        <h2>WOB(Weight Of Bit)</h2>
+                        <P id="WOB">{{ WOB }} klbf</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/hook.png">
+                        <h2>Hook Load</h2>
+                        <P id="hook">{{ hook }} klbf</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/mud.png">
+                        <h2>Mud Density</h2>
+                        <P id="mud_den">{{ mud_den }} ppg</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/mud.png">
+                        <h2>Mud Flow Rate</h2>
+                        <P id="mud_flow">{{ mud_flow }} gpm</P>
+                    </center>
+                </div>
+
+                <div class="{{tag}}-stat">
+                    <center>
+                        <img class="{{tag}}-icon" src="static/assets/img/wind.png">
+                        <h2>Gas Detection</h2>
+                        <P id="gas">{{ gas }} ppm</P>
+                    </center>
+                </div>
+            </div>
+    </div>
+
+    <center>
+        <h1 style="margin-bottom: -100px;">CHARTS</h1>
+    </center>
+
+    <div class="{{tag}}-charts">
+        <div class="{{tag}}-options">
+            <div class="choice">
+                <h2>Depth</h2>
+            </div>
+
+            <div class="choice">
+                <h2>ROP</h2>
+            </div>
+
+            <div class="choice">
+                <h2>Torque</h2>
+            </div>
+
+            <div class="choice">
+                <h2>RPM</h2>
+            </div>
+
+            <div class="choice">
+                <h2>Standpipe Pressure</h2>
+            </div>
+
+            <div class="choice">
+                <h2>WOB</h2>
+            </div>
+
+            <div class="choice">
+                <h2>Hook Load</h2>
+            </div>
+
+            <div class="choice">
+                <h2>Mud Density</h2>
+            </div>
+
+            <div class="choice">
+                <h2>Mud Flow Rate</h2>
+            </div>
+
+            <div class="choice" style="margin-right:30px;">
+                <h2>Gas Detection</h2>
+            </div>
+
+        </div>
+        <div id="chart"></div>
+
+    </div>
+
+    <center>
+        <a class="{{tag}}-data" href="static/data/{{ data }}" target="_blank"><h2>DATA</h2></a>
+
+    </center>
+</body>
+    <script src="static/js/clock.js"></script>
+    <script src="static/js/update.js"></script>
+    <script src="static/js/chart.js"></script>
+</html>

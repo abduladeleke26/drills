@@ -2,12 +2,14 @@ from flask import Flask, render_template, jsonify, request
 import pandas as pd
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
-
+import os
 app = Flask(__name__)
 
 
 current_time = datetime.now().time().replace(microsecond=0)
 
+
+os.environ['TZ'] = 'America/Chicago'
 
 
 file_path = ""
